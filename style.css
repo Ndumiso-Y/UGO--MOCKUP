@@ -105,6 +105,25 @@ nav {
     list-style: none;
 }
 
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--black);
+    padding: 8px;
+    z-index: 1001;
+}
+
+header:not(.scrolled):not(.header-solid) .menu-toggle {
+    color: var(--white);
+}
+
+header.scrolled .menu-toggle, header.header-solid .menu-toggle {
+    color: var(--black);
+}
+
+
 .nav-links a {
     text-decoration: none;
     color: var(--white);
@@ -700,10 +719,11 @@ footer {
     font-size: 14px;
 }
 
-/* Mobile Responsiveness */
+/* Mobile Responsiveness Updates */
 @media (max-width: 1024px) {
     .takeaway-layout, .contact-layout {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
     
     .hero h1 {
@@ -713,22 +733,112 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
+    
+    .takeaway-img img {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img {
+        height: 70px !important;
+    }
+
+    header.scrolled .logo img, header.header-solid .logo img {
+        height: 60px !important;
+    }
+
     .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s ease-in-out;
+        box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+        padding: 40px;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links a {
+        color: var(--black) !important;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .nav-links a::after {
         display: none;
     }
-    
+
+    .nav-actions {
+        display: none;
+    }
+
     .why-grid {
         grid-template-columns: 1fr;
     }
-    
-    .hero h1 {
-        font-size: 36px;
+
+    .hero {
+        text-align: center;
+        padding-top: 140px;
     }
     
+    .hero h1 {
+        font-size: 38px;
+    }
+    
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
     .section {
         padding: 60px 0;
     }
+
+    .section-header h2 {
+        font-size: 32px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .takeaway-layout, .contact-layout {
+        text-align: center;
+    }
+
+    .takeaway-layout img, .takeaway-layout .takeaway-img {
+        order: -1;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        grid-column: span 1 !important;
+    }
 }
+
