@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | UGO Supermarket & Takeaway</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 16px;
+            border: 1px solid #DDD;
+            border-radius: var(--radius-sm);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="header-solid">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="UGO LOGO.png" alt="UGO Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="specials.html">Specials</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="delivery.html">Delivery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="delivery.html" class="btn btn-delivery">
+                        <i data-lucide="truck"></i> Go Basket
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero hero-sub" style="background: var(--bg-warm); color: var(--black);">
+        <div class="container" style="position: relative; z-index: 10;">
+            <div class="hero-content">
+                <h1 style="font-size: 48px;">Get in Touch</h1>
+                <p>We're here to help. Reach out with any questions or order requests.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form action="#">
+                        <input type="text" placeholder="Full Name" required>
+                        <input type="email" placeholder="Email Address" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col" style="grid-column: span 1;">
+                    <img src="UGO LOGO.png" alt="UGO Logo" style="height: 160px; margin-bottom: 24px; filter: brightness(0) invert(1);">
+                    <p style="color: #AAA;">UGO Supermarket & Takeaway is your destination for quality groceries, fresh meat, and delicious meals.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="specials.html">Weekly Specials</a></li>
+                        <li><a href="delivery.html">Go Basket Delivery</a></li>
+                        <li><a href="about.html">About UGO</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p style="color: #AAA;">+27 11 123 4567<br>123 Main Road, CBD</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 UGO Supermarket & Takeaway. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
