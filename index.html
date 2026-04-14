@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UGO Supermarket & Takeaway | Home</title>
+    <meta name="description" content="Your local South African supermarket for fresh groceries, quality meat, hot takeaway meals, and everyday essentials. Visit UGO Supermarket today.">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header id="main-header">
         <div class="container">
             <nav>
@@ -29,14 +32,17 @@
             </nav>
         </div>
     </header>
-    
+
+    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-bg"><img src="hero_supermarket.png" alt="Hero"></div>
+        <div class="hero-bg">
+            <img src="hero_supermarket.png" alt="Modern Supermarket Interior">
+        </div>
         <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
                 <h1>Groceries, Butchery & Hot Meals — All in One Place.</h1>
-                <p>Fresh groceries, quality meat cuts, delicious takeaway meals, and everyday essentials for your family.</p>
+                <p>Fresh groceries, quality meat cuts, delicious takeaway meals, and everyday household essentials for your family. Quality you can trust, value you can feel.</p>
                 <div class="hero-btns">
                     <a href="specials.html" class="btn btn-primary">Shop Weekly Specials</a>
                     <a href="delivery.html" class="btn btn-outline" style="color: white; border-color: white;">Order Delivery</a>
@@ -45,7 +51,7 @@
         </div>
     </section>
 
-    <!-- ... rest remains same ... -->
+    <!-- Go Basket Delivery Highlight -->
     <section class="section" style="background: var(--bg-light);">
         <div class="container">
             <div class="takeaway-layout">
@@ -53,7 +59,9 @@
                     <img src="delivery_service.png" alt="Go Basket Delivery Service">
                 </div>
                 <div class="takeaway-content">
-                    <div class="go-basket-accent"><i data-lucide="zap"></i> Fast & Reliable</div>
+                    <div class="go-basket-accent">
+                        <i data-lucide="zap"></i> Fast & Reliable
+                    </div>
                     <h2>Too Busy? **Go Basket** Delivers.</h2>
                     <p>Get your South African favorites delivered straight to your door. From **White Star Maize Meal** to our famous **Hot Kotas**, we bring UGO to you.</p>
                     <ul class="food-list" style="grid-template-columns: 1fr;">
@@ -67,7 +75,50 @@
         </div>
     </section>
 
-    <section class="section">
+    <!-- Feature Categories -->
+    <section class="section" id="categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Departments</h2>
+                <p>Explore our wide range of fresh products and quality services designed for your convenience.</p>
+            </div>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon"><i data-lucide="shopping-basket"></i></div>
+                    <h3>Groceries</h3>
+                    <p>Everyday essentials</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i data-lucide="apple"></i></div>
+                    <h3>Fresh Produce</h3>
+                    <p>Farm to table</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i data-lucide="beef"></i></div>
+                    <h3>Butchery</h3>
+                    <p>Quality meat cuts</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i data-lucide="utensils"></i></div>
+                    <h3>Hot Takeaway</h3>
+                    <p>Ready-to-eat meals</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i data-lucide="coffee"></i></div>
+                    <h3>Snacks & Drinks</h3>
+                    <p>Refreshments</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon"><i data-lucide="home"></i></div>
+                    <h3>Household</h3>
+                    <p>Home essentials</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Specials (SA Products) -->
+    <section class="section" style="background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
                 <h2>Local Favorites & Specials</h2>
@@ -102,9 +153,13 @@
                     </div>
                 </div>
             </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="specials.html" class="btn btn-outline">View All Specials</a>
+            </div>
         </div>
     </section>
 
+    <!-- Hot Meals Section -->
     <section class="section" style="background: var(--bg-warm);">
         <div class="container">
             <div class="takeaway-layout">
@@ -126,12 +181,13 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col" style="grid-column: span 1;">
                     <img src="ugo_logo.png" alt="UGO Logo" style="height: 160px; margin-bottom: 24px; filter: brightness(0) invert(1);">
-                    <p style="color: #AAA;">UGO Supermarket & Takeaway is your destination for quality groceries, fresh meat, and delicious meals.</p>
+                    <p style="color: #AAA; font-size: 14px;">UGO Supermarket & Takeaway is your destination for quality groceries, fresh meat, and delicious meals.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Quick Links</h4>
@@ -143,7 +199,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>Contact Us</h4>
-                    <p style="color: #AAA;">+27 11 123 4567<br>123 Main Road, CBD</p>
+                    <p style="color: #AAA; font-size: 14px;">+27 11 123 4567<br>123 Main Road, CBD</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -151,6 +207,7 @@
             </div>
         </div>
     </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
